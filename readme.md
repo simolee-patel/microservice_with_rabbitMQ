@@ -8,10 +8,10 @@ then you can use rabbitMQ server with local url: http://localhost:15672/
 
 default username and password is guest
 
-Here Task is publisher in queue
+Task folder is publisher in queue
 -> when new task is added then publish it in queue
 
-User is subscriber
+User folder is subscriber in queue
 ->it always listen to the event when new events compes it will store it in it's database
 
 Main use of rabbitMQ here is if any one service is down and another send any event then it store event in the queue until user service subscribe and acknolege it
